@@ -29,7 +29,7 @@ class SocketTool{
     }
     //断开链接
     disconnect() {
-        this.client.disconnect()
+        this.client.isConnected()&&this.client.disconnect()
     };
 }
 export default SocketTool

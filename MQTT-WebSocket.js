@@ -32,7 +32,7 @@ var SocketTool = /** @class */ (function () {
     };
     //断开链接
     SocketTool.prototype.disconnect = function () {
-        this.client.disconnect();
+        this.client.isConnected()&&this.client.disconnect();
     };
     ;
     return SocketTool;
